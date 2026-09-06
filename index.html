@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1b141c" />
+  <meta name="description" content="Jhana Braids — especialista em tranças, French Curl Braids, Boho Braids e megahair em Salvador. Atendimento com hora marcada no Cabula VI e a domicílio." />
+  <meta name="keywords" content="Jhana Braids, trancista Salvador, tranças Salvador, Cabula VI, French Curl Braids Salvador, Boho Braids Salvador, megahair Salvador" />
+  <meta property="og:title" content="Jhana Braids | Tranças em Salvador" />
+  <meta property="og:description" content="Beleza que empodera. Escolha seu estilo, veja resultados reais e solicite seu horário pelo site." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://res.cloudinary.com/vx0fzksu/image/upload/v1787878564/file_00000000b468820e9e946a9fd0d74b66.png" />
+  <title>Jhana Braids | Tranças & Megahair em Salvador</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#fbf7fb;
+      --surface:#ffffff;
+      --ink:#1b141c;
+      --muted:#6e626d;
+      --brand:#b55a94;
+      --brand-2:#db9bbf;
+      --brand-3:#f1d5e7;
+      --line:#eadde6;
+      --shadow:0 18px 50px rgba(41,20,37,.12);
+      --radius:22px;
+      --max:1180px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:"DM Sans",sans-serif;
+      background:var(--bg);
+      color:var(--ink);
+      line-height:1.6;
+      overflow-x:hidden;
+    }
+    img,video{display:block;max-width:100%}
+    a{text-decoration:none;color:inherit}
+    button,input,select,textarea{font:inherit}
+    button{cursor:pointer}
+    .container{width:min(var(--max),calc(100% - 36px));margin-inline:auto}
+    .section{padding:88px 0}
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 12px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      background:rgba(255,255,255,.82);
+      color:var(--brand);
+      font-weight:700;
+      font-size:.82rem;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+    }
+    h1,h2,h3{font-family:"Playfair Display",serif;line-height:1.08;margin:0 0 16px}
+    h1{font-size:clamp(2.7rem,7vw,5.8rem)}
+    h2{font-size:clamp(2rem,4vw,3.5rem)}
+    h3{font-size:1.45rem}
+    p{margin:0 0 18px}
+    .muted{color:var(--muted)}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      min-height:52px;
+      padding:0 22px;
+      border-radius:999px;
+      border:1px solid transparent;
+      font-weight:700;
+      transition:.2s ease;
+    }
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:var(--ink);color:#fff;box-shadow:0 10px 24px rgba(27,20,28,.18)}
+    .btn-secondary{background:#fff;border-color:var(--line)}
+    .btn-brand{background:var(--brand);color:#fff}
+    .btn-block{width:100%}
+    .nav{
+      position:sticky;
+      top:0;
+      z-index:50;
+      backdrop-filter:blur(16px);
+      background:rgba(251,247,251,.84);
+      border-bottom:1px solid rgba(234,221,230,.8);
+    }
+    .nav-inner{
+      height:74px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:18px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-weight:800;
+    }
+    .brand img{
+      width:44px;
+      height:44px;
+      border-radius:50%;
+      object-fit:cover;
+      border:1px solid var(--line);
+      background:#fff;
+    }
+    .nav-links{display:flex;gap:24px;align-items:center;font-size:.94rem}
+    .nav-links a:hover{color:var(--brand)}
+    .hero{
+      min-height:calc(100vh - 74px);
+      display:grid;
+      align-items:center;
+      position:relative;
+      overflow:hidden;
+      padding:48px 0;
+    }
+    .hero:before{
+      content:"";
+      position:absolute;
+      width:600px;
+      height:600px;
+      border-radius:50%;
+      background:radial-gradient(circle,var(--brand-3),transparent 68%);
+      top:-190px;
+      right:-180px;
+      opacity:.9;
+      pointer-events:none;
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.02fr .98fr;
+      gap:54px;
+      align-items:center;
+      position:relative;
+      z-index:2;
+    }
+    .hero-copy p{font-size:1.08rem;max-width:650px}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0}
+    .proof-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+    .proof{
+      padding:10px 13px;
+      border-radius:999px;
+      background:#fff;
+      border:1px solid var(--line);
+      font-size:.88rem;
+      color:var(--muted);
+    }
+    .hero-media{
+      position:relative;
+      border-radius:32px;
+      overflow:hidden;
+      min-height:620px;
+      box-shadow:var(--shadow);
+      background:#000;
+    }
+    .hero-media video{
+      width:100%;
+      height:100%;
+      position:absolute;
+      inset:0;
+      object-fit:cover;
+    }
+    .hero-media:after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(180deg,transparent 55%,rgba(20,12,19,.65));
+      pointer-events:none;
+    }
+    .hero-caption{
+      position:absolute;
+      left:22px;
+      right:22px;
+      bottom:22px;
+      z-index:3;
+      color:#fff;
+      display:flex;
+      justify-content:space-between;
+      align-items:end;
+      gap:16px;
+    }
+    .stats{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:14px;
+      margin-top:-22px;
+      position:relative;
+      z-index:4;
+    }
+    .stat{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:20px;
+      padding:20px;
+      box-shadow:0 10px 30px rgba(27,20,28,.06);
+    }
+    .stat strong{display:block;font-size:1.35rem}
+    .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .card{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      overflow:hidden;
+      transition:.2s ease;
+    }
+    .card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+    .card-media{aspect-ratio:4/5;overflow:hidden;background:#eee}
+    .card-media img{width:100%;height:100%;object-fit:cover}
+    .card-body{padding:20px}
+    .card-tag{
+      display:inline-block;
+      margin-bottom:10px;
+      color:var(--brand);
+      font-size:.78rem;
+      font-weight:800;
+      text-transform:uppercase;
+      letter-spacing:.05em;
+    }
+    .service-card .btn{margin-top:8px}
+    .section-head{
+      display:flex;
+      justify-content:space-between;
+      gap:30px;
+      align-items:end;
+      margin-bottom:32px;
+    }
+    .section-head p{max-width:620px}
+    .portfolio{
+      columns:3 280px;
+      column-gap:16px;
+    }
+    .portfolio figure{
+      break-inside:avoid;
+      margin:0 0 16px;
+      border-radius:20px;
+      overflow:hidden;
+      position:relative;
+      background:#fff;
+      border:1px solid var(--line);
+      cursor:pointer;
+    }
+    .portfolio img{width:100%;transition:.25s ease}
+    .portfolio figure:hover img{transform:scale(1.02)}
+    .portfolio figcaption{
+      position:absolute;
+      left:10px;
+      bottom:10px;
+      padding:7px 10px;
+      border-radius:999px;
+      background:rgba(15,10,14,.68);
+      color:#fff;
+      font-size:.8rem;
+      backdrop-filter:blur(8px);
+    }
+    .video-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .reel{
+      aspect-ratio:9/16;
+      border-radius:22px;
+      overflow:hidden;
+      background:#000;
+      box-shadow:0 10px 30px rgba(27,20,28,.12);
+    }
+    .reel video{width:100%;height:100%;object-fit:cover}
+    .dark{
+      background:#1b141c;
+      color:#fff;
+    }
+    .dark .muted{color:#cbbfc9}
+    .about-grid{
+      display:grid;
+      grid-template-columns:.9fr 1.1fr;
+      gap:48px;
+      align-items:center;
+    }
+    .about-media{
+      border-radius:28px;
+      overflow:hidden;
+      min-height:500px;
+      box-shadow:var(--shadow);
+    }
+    .about-media img{width:100%;height:100%;object-fit:cover}
+    .checklist{display:grid;gap:12px;margin:24px 0}
+    .check{
+      display:flex;
+      gap:12px;
+      align-items:flex-start;
+    }
+    .check i{
+      width:26px;height:26px;
+      display:grid;place-items:center;
+      border-radius:50%;
+      background:var(--brand-3);
+      color:var(--brand);
+      font-style:normal;
+      font-weight:900;
+      flex:0 0 auto;
+    }
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .step{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:26px;
+    }
+    .step-num{
+      width:42px;height:42px;
+      display:grid;place-items:center;
+      border-radius:50%;
+      background:var(--ink);
+      color:#fff;
+      font-weight:800;
+      margin-bottom:18px;
+    }
+    .booking-wrap{
+      display:grid;
+      grid-template-columns:.8fr 1.2fr;
+      gap:28px;
+      align-items:start;
+    }
+    .booking-card{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:28px;
+      padding:26px;
+      box-shadow:var(--shadow);
+    }
+    .form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .field{display:grid;gap:7px}
+    .field.full{grid-column:1/-1}
+    label{font-weight:700;font-size:.9rem}
+    input,select,textarea{
+      width:100%;
+      border:1px solid var(--line);
+      border-radius:14px;
+      background:#fff;
+      min-height:48px;
+      padding:0 14px;
+      color:var(--ink);
+      outline:none;
+    }
+    textarea{padding:12px 14px;min-height:100px;resize:vertical}
+    input:focus,select:focus,textarea:focus{border-color:var(--brand);box-shadow:0 0 0 3px rgba(181,90,148,.12)}
+    .booking-note{
+      margin-top:14px;
+      padding:12px 14px;
+      border-radius:14px;
+      background:#fbf4f8;
+      color:var(--muted);
+      font-size:.88rem;
+    }
+    .faq{display:grid;gap:12px}
+    details{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:0 18px;
+    }
+    summary{
+      list-style:none;
+      cursor:pointer;
+      padding:18px 0;
+      font-weight:800;
+      display:flex;
+      justify-content:space-between;
+      gap:18px;
+    }
+    summary::-webkit-details-marker{display:none}
+    summary:after{content:"+";color:var(--brand);font-size:1.35rem}
+    details[open] summary:after{content:"–"}
+    details p{padding:0 0 18px}
+    .location-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:24px;
+    }
+    .location-card{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:26px;
+    }
+    footer{
+      background:#120d12;
+      color:#fff;
+      padding:46px 0 100px;
+    }
+    .footer-grid{
+      display:grid;
+      grid-template-columns:1.3fr .7fr .7fr;
+      gap:30px;
+    }
+    .footer-links{display:grid;gap:10px;color:#d4c9d2}
+    .wa-float{
+      position:fixed;
+      right:18px;
+      bottom:18px;
+      z-index:60;
+      width:58px;height:58px;
+      border-radius:50%;
+      display:grid;
+      place-items:center;
+      background:#24d366;
+      color:#fff;
+      box-shadow:0 14px 30px rgba(0,0,0,.22);
+      font-size:1.35rem;
+      font-weight:900;
+    }
+    .mobile-bar{display:none}
+    .lightbox{
+      position:fixed;
+      inset:0;
+      z-index:100;
+      background:rgba(14,9,13,.92);
+      display:none;
+      place-items:center;
+      padding:24px;
+    }
+    .lightbox.open{display:grid}
+    .lightbox img{
+      max-width:min(900px,95vw);
+      max-height:86vh;
+      border-radius:18px;
+    }
+    .lightbox button{
+      position:absolute;
+      top:18px;
+      right:18px;
+      border:0;
+      width:44px;height:44px;
+      border-radius:50%;
+      font-size:1.3rem;
+      background:#fff;
+    }
+    .toast{
+      position:fixed;
+      left:50%;
+      bottom:90px;
+      transform:translateX(-50%) translateY(20px);
+      background:#1b141c;
+      color:#fff;
+      padding:12px 16px;
+      border-radius:999px;
+      opacity:0;
+      pointer-events:none;
+      transition:.2s ease;
+      z-index:120;
+    }
+    .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+    @media(max-width:980px){
+      .nav-links{display:none}
+      .hero-grid,.about-grid,.booking-wrap,.location-grid{grid-template-columns:1fr}
+      .hero-media{min-height:520px}
+      .grid-4,.video-grid{grid-template-columns:repeat(2,1fr)}
+      .stats{grid-template-columns:repeat(2,1fr);margin-top:20px}
+      .steps{grid-template-columns:1fr}
+      .footer-grid{grid-template-columns:1fr}
+    }
+    @media(max-width:640px){
+      .container{width:min(100% - 24px,var(--max))}
+      .section{padding:66px 0}
+      .nav-inner{height:66px}
+      .hero{padding:24px 0 38px}
+      .hero-grid{gap:28px}
+      .hero-media{min-height:490px;border-radius:24px}
+      .hero-actions{display:grid;grid-template-columns:1fr}
+      .hero-actions .btn{width:100%}
+      .grid-4,.video-grid,.form-grid{grid-template-columns:1fr}
+      .video-grid{grid-template-columns:repeat(2,1fr)}
+      .section-head{display:block}
+      .section-head p{margin-top:10px}
+      .stats{grid-template-columns:1fr 1fr}
+      .stat{padding:16px}
+      .booking-card{padding:18px}
+      .wa-float{display:none}
+      footer{padding-bottom:110px}
+      .mobile-bar{
+        display:grid;
+        grid-template-columns:repeat(4,1fr);
+        position:fixed;
+        left:10px;right:10px;bottom:10px;
+        z-index:70;
+        background:rgba(27,20,28,.94);
+        backdrop-filter:blur(12px);
+        border-radius:18px;
+        overflow:hidden;
+        box-shadow:0 16px 34px rgba(0,0,0,.25);
+      }
+      .mobile-bar a{
+        color:#fff;
+        display:grid;
+        place-items:center;
+        min-height:58px;
+        font-size:.74rem;
+        gap:2px;
+      }
+      .mobile-bar a strong{font-size:1.05rem}
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#inicio" aria-label="Jhana Braids">
+        <img src="https://res.cloudinary.com/vx0fzksu/image/upload/v1787878564/file_00000000b468820e9e946a9fd0d74b66.png" alt="Logo Jhana Braids">
+        <span>Jhana Braids</span>
+      </a>
+      <div class="nav-links">
+        <a href="#estilos">Estilos</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#faq">Dúvidas</a>
+        <a href="#agendar" class="btn btn-brand">Agendar</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Beleza que empodera</span>
+            <h1>Tranças que transformam seu visual — e a forma como você se sente.</h1>
+            <p class="muted">Especialista em tranças, French Curl Braids, Boho Braids e megahair em Salvador. Atendimento com hora marcada no Cabula VI e opção a domicílio.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#agendar">Agendar meu horário</a>
+              <a class="btn btn-secondary" href="#resultados">Ver resultados reais</a>
+            </div>
+            <div class="proof-row">
+              <span class="proof">+500 atendimentos</span>
+              <span class="proof">Cabula VI • Salvador</span>
+              <span class="proof">Somente com hora marcada</span>
+              <span class="proof">Atendimento a domicílio</span>
+            </div>
+          </div>
+          <div class="hero-media">
+            <video autoplay muted loop playsinline preload="metadata" poster="https://res.cloudinary.com/vx0fzksu/image/upload/v1787878562/French_curl_braids_gostaram_desse_resultado_frechcurlbraids_tran%C3%A7as_followforfollow.jpg">
+              <source src="https://res.cloudinary.com/vx0fzksu/video/upload/v1787878576/O_charme_das_French_Curl_Braids_%C3%A9_incompar%C3%A1vel_Cachos_delicados_acabamento_impec%C3%A1vel_e_aquel.mp4" type="video/mp4">
+            </video>
+            <div class="hero-caption">
+              <div>
+                <small>Resultado real</small>
+                <strong style="display:block;font-size:1.15rem">French Curl Braids</strong>
+              </div>
+              <a href="#agendar" class="btn btn-brand" data-service="French Curl Braids">Quero esse visual</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stat"><strong>+500</strong><span class="muted">atendimentos</span></div>
+          <div class="stat"><strong>Salvador</strong><span class="muted">Cabula VI</span></div>
+          <div class="stat"><strong>Agenda</strong><span class="muted">com hora marcada</span></div>
+          <div class="stat"><strong>Flexível</strong><span class="muted">espaço ou domicílio</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="estilos">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Escolha seu próximo visual</span>
+            <h2>Seu estilo começa aqui.</h2>
+          </div>
+          <p class="muted">Veja algumas das opções presentes no portfólio da Jhana Braids. Ao escolher um estilo, o agendamento já será preparado para você.</p>
+        </div>
+
+        <div class="grid-4">
+          <article class="card service-card">
+            <div class="card-media">
+              <img loading="lazy" src="https://res.cloudinary.com/vx0fzksu/image/upload/v1787878562/French_curl_braids_gostaram_desse_resultado_frechcurlbraids_tran%C3%A7as_followforfollow_1.jpg" alt="French Curl Braids">
+            </div>
+            <div class="card-body">
+              <span class="card-tag">Movimento + acabamento</span>
+              <h3>French Curl Braids</h3>
+              <p class="muted">Tranças com cachos marcantes e acabamento delicado para um resultado leve e sofisticado.</p>
+              <button class="btn btn-secondary btn-block select-service" data-service="French Curl Braids">Quero esse visual</button>
+            </div>
+          </article>
+
+          <article class="card service-card">
+            <div class="card-media">
+              <img loading="lazy" src="https://res.cloudinary.com/vx0fzksu/image/upload/v1787878569/Screenshot_20260827_205710_Instagram.jpg" alt="Boho Braids">
+            </div>
+            <div class="card-body">
+              <span class="card-tag">Leveza + personalidade</span>
+              <h3>Boho Braids</h3>
+              <p class="muted">Uma opção versátil para quem busca tranças com textura, movimento e um visual contemporâneo.</p>
+              <button class="btn btn-secondary btn-block select-service" data-service="Boho Braids">Quero esse visual</button>
+            </div>
+          </article>
+
+          <article class="card service-card">
+            <div class="card-media">
+              <img loading="lazy" src="https://res.cloudinary.com/vx0fzksu/image/upload/v1787878568/Screenshot_20260827_205655_Instagram.jpg" alt="Tranças Jhana Braids">
+            </div>
+            <div class="card-body">
+              <span class="card-tag">Detalhes + precisão</span>
+              <h3>Tranças</h3>
+              <p class="muted">Acabamento cuidadoso e estilos adaptados ao resultado que você deseja construir.</p>
+              <button class="btn btn-secondary btn-block select-service" data-service="Tranças">Quero minhas tranças</button>
+            </div>
+          </article>
+
+          <article class="card service-card">
+            <div class="card-media">
+              <img loading="lazy" src="https://res.cloudinary.com/vx0fzksu/image/upload/v1787878571/Screenshot_20260827_212056_WhatsApp.jpg" alt="Megahair Jhana Braids">
+            </div>
+            <div class="card-body">
+              <span class="card-tag">Comprimento + presença</span>
+              <h3>Megahair</h3>
+              <p class="muted">Consulte opções, disponibilidade e condições atuais diretamente no agendamento.</p>
+              <button class="btn btn-secondary btn-block select-service" data-service="Megahair">Consultar megahair</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="resultados" style="padding-top:30px">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Portfólio real</span>
+            <h2>Detalhes que fazem diferença.</h2>
+          </div>
+          <p class="muted">Toque em qualquer imagem para ampliar. Os materiais abaixo foram fornecidos pela própria marca.</p>
+        </div>
+
+        <div class="portfolio">
+          <figure><img loading="lazy" src="https://res.cloudinary.com/vx0fzksu/image/upload/v1787878569/Screenshot_20260827_205710_Instagram.jpg" alt="Resultado de tranças Jhana Braids"><figcaption>Acabamento</figcaption></figure>
+          <figure><img loading="lazy" src="https://res.cloudinary.com/vx0fzksu/image/upload/v1787878568/Screenshot_20260827_205841_Instagram.jpg" alt="Jhana Braids"><figcaption>Jhana Braids</figcaption></figure>
+          <figure><img loading="lazy" src="https://res.cloudinary.com/vx0fzksu/image/upload/v1787878568/Screenshot_20260827_205655_Instagram.jpg" alt="Detalhe de tranças"><figcaption>Detalhes</figcaption></figure>
+          <figure><img loading="lazy" src="https://res.cloudinary.com/vx0fzksu/image/upload/v1787878567/Screenshot_20260827_205541_Instagram.jpg" alt="Resultado de tranças"><figcaption>Comprimento</figcaption></figure>
+          <figure><img loading="lazy" src="https://res.cloudinary.com/vx0fzksu/image/upload/v1787878563/Screenshot_20260827_205445_Instagram.jpg" alt="Resultado frontal"><figcaption>Resultado frontal</figcaption></figure>
+          <figure><img loading="lazy" src="https://res.cloudinary.com/vx0fzksu/image/upload/v1787878563/Screenshot_20260827_205524_Instagram.jpg" alt="Resultado traseiro"><figcaption>Resultado traseiro</figcaption></figure>
+          <figure><img loading="lazy" src="https://res.cloudinary.com/vx0fzksu/image/upload/v1787878563/Screenshot_20260827_205507_Instagram.jpg" alt="Resultado Jhana Braids"><figcaption>Transformação</figcaption></figure>
+          <figure><img loading="lazy" src="https://res.cloudinary.com/vx0fzksu/image/upload/v1787878562/French_curl_braids_gostaram_desse_resultado_frechcurlbraids_tran%C3%A7as_followforfollow.jpg" alt="French Curl Braids"><figcaption>French Curl</figcaption></figure>
+          <figure><img loading="lazy" src="https://res.cloudinary.com/vx0fzksu/image/upload/v1787878562/French_curl_braids_gostaram_desse_resultado_frechcurlbraids_tran%C3%A7as_followforfollow_2.jpg" alt="French Curl Braids resultado"><figcaption>French Curl</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow" style="background:#2b202a;border-color:#453544;color:#f0b8d7">Resultados em movimento</span>
+            <h2>Veja de perto.</h2>
+          </div>
+          <p class="muted">Vídeos reais do trabalho da Jhana Braids para você perceber textura, movimento e acabamento.</p>
+        </div>
+
+        <div class="video-grid">
+          <div class="reel">
+            <video controls playsinline preload="metadata">
+              <source src="https://res.cloudinary.com/vx0fzksu/video/upload/v1787878576/Boho_braids_com_cabelo_humano_assiste_at%C3%A9_o_final_%EF%B8%8F_bohobraids_cabelohumano_trancista_r.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="reel">
+            <video controls playsinline preload="metadata">
+              <source src="https://res.cloudinary.com/vx0fzksu/video/upload/v1787878576/O_charme_das_French_Curl_Braids_%C3%A9_incompar%C3%A1vel_Cachos_delicados_acabamento_impec%C3%A1vel_e_aquel.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="reel">
+            <video controls playsinline preload="metadata">
+              <source src="https://res.cloudinary.com/vx0fzksu/video/upload/v1787878574/O_tipo_de_resultado_que_faz_qualquer_uma_querer_marcar_um_hor%C3%A1rio_na_mesma_hora.___French_Cu.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="reel">
+            <video controls playsinline preload="metadata">
+              <source src="https://res.cloudinary.com/vx0fzksu/video/upload/v1787878573/nevo_das_pretinhas_%EF%B8%8F.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sobre">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-media">
+            <img loading="lazy" src="https://res.cloudinary.com/vx0fzksu/image/upload/v1787878569/Screenshot_20260827_205906_Instagram.jpg" alt="Profissional Jhana Braids">
+          </div>
+          <div>
+            <span class="eyebrow">Por trás da Jhana Braids</span>
+            <h2>Beleza, estilo e autoestima em cada detalhe.</h2>
+            <p class="muted">A Jhana Braids se apresenta como especialista em tranças, com foco em excelência de acabamento e mais de 500 atendimentos realizados.</p>
+            <div class="checklist">
+              <div class="check"><i>✓</i><div><strong>Especialista em tranças</strong><div class="muted">Foco em estilos que valorizam identidade e presença.</div></div></div>
+              <div class="check"><i>✓</i><div><strong>Excelência em acabamentos</strong><div class="muted">Detalhes visuais que fazem parte da proposta da marca.</div></div></div>
+              <div class="check"><i>✓</i><div><strong>+500 atendimentos</strong><div class="muted">Experiência prática comunicada pela própria empresa.</div></div></div>
+              <div class="check"><i>✓</i><div><strong>Atendimento a domicílio</strong><div class="muted">Consulte disponibilidade para sua região.</div></div></div>
+            </div>
+            <a class="btn btn-primary" href="#agendar">Quero agendar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:24px">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Simples e direto</span>
+            <h2>Seu novo visual em 3 passos.</h2>
+          </div>
+        </div>
+        <div class="steps">
+          <div class="step"><div class="step-num">1</div><h3>Escolha seu estilo</h3><p class="muted">Selecione a opção que mais combina com o resultado que você quer.</p></div>
+          <div class="step"><div class="step-num">2</div><h3>Solicite seu horário</h3><p class="muted">Informe data, horário e se prefere atendimento no espaço ou a domicílio.</p></div>
+          <div class="step"><div class="step-num">3</div><h3>Confirme pelo WhatsApp</h3><p class="muted">O site monta sua solicitação e envia tudo organizado para a Jhana Braids.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="agendar">
+      <div class="container">
+        <div class="booking-wrap">
+          <div>
+            <span class="eyebrow">Agendamento</span>
+            <h2>Seu próximo visual começa aqui.</h2>
+            <p class="muted">Preencha o essencial. Ao finalizar, sua solicitação será enviada pelo WhatsApp já organizada para facilitar a confirmação.</p>
+            <div class="location-card">
+              <strong>Jhana Braids</strong>
+              <p class="muted" style="margin-top:8px">Cabula VI • Salvador — BA<br>Rua Anísio Melhor, 43<br>CEP 41181-100</p>
+              <p class="muted">Atendimento somente com hora marcada.</p>
+            </div>
+          </div>
+
+          <form class="booking-card" id="bookingForm">
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">Seu nome</label>
+                <input id="name" name="name" required placeholder="Como podemos te chamar?">
+              </div>
+              <div class="field">
+                <label for="service">Serviço</label>
+                <select id="service" name="service" required>
+                  <option value="">Selecione</option>
+                  <option>French Curl Braids</option>
+                  <option>Boho Braids</option>
+                  <option>Tranças</option>
+                  <option>Megahair</option>
+                  <option>Outro estilo / Quero orientação</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="length">Comprimento desejado</label>
+                <select id="length" name="length">
+                  <option value="">Ainda não sei</option>
+                  <option>Curto</option>
+                  <option>Médio</option>
+                  <option>Longo</option>
+                  <option>Extra longo</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="location">Modalidade</label>
+                <select id="location" name="location" required>
+                  <option value="">Selecione</option>
+                  <option>Atendimento no espaço — Cabula VI</option>
+                  <option>Atendimento a domicílio</option>
+                </select>
+              </div>
+
+              <div class="field" id="neighborhoodField" style="display:none">
+                <label for="neighborhood">Bairro</label>
+                <input id="neighborhood" name="neighborhood" placeholder="Seu bairro">
+              </div>
+
+              <div class="field">
+                <label for="date">Data desejada</label>
+                <input id="date" name="date" type="date" required>
+              </div>
+
+              <div class="field">
+                <label for="time">Horário desejado</label>
+                <input id="time" name="time" type="time" required>
+              </div>
+
+              <div class="field full">
+                <label for="note">Observação ou referência</label>
+                <textarea id="note" name="note" placeholder="Ex.: quero algo parecido com o resultado do portfólio / tenho foto de referência."></textarea>
+              </div>
+
+              <div class="field full">
+                <button class="btn btn-brand btn-block" type="submit">Enviar solicitação no WhatsApp</button>
+                <div class="booking-note">O envio não confirma automaticamente o horário. A Jhana Braids confirma disponibilidade diretamente pelo WhatsApp.</div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq" style="padding-top:20px">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Dúvidas frequentes</span>
+            <h2>Antes de agendar.</h2>
+          </div>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>O atendimento precisa ser marcado?</summary>
+            <p class="muted">Sim. A Jhana Braids informa atendimento somente com hora marcada.</p>
+          </details>
+          <details>
+            <summary>Vocês atendem a domicílio?</summary>
+            <p class="muted">Sim. A marca informa atendimento a domicílio. A disponibilidade para cada região deve ser confirmada pelo WhatsApp.</p>
+          </details>
+          <details>
+            <summary>Onde fica a Jhana Braids?</summary>
+            <p class="muted">Cabula VI, Salvador — BA. O endereço informado pela empresa é Rua Anísio Melhor, 43, CEP 41181-100.</p>
+          </details>
+          <details>
+            <summary>O material está incluso?</summary>
+            <p class="muted">Isso pode variar conforme o serviço e a condição vigente. Confirme o material necessário e as condições no momento do agendamento.</p>
+          </details>
+          <details>
+            <summary>Posso enviar uma foto de referência?</summary>
+            <p class="muted">Sim. Você pode indicar no formulário que possui uma referência e enviá-la pelo WhatsApp durante a confirmação.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:24px">
+      <div class="container">
+        <div class="location-grid">
+          <div class="location-card">
+            <span class="eyebrow">Localização</span>
+            <h3 style="margin-top:14px">Cabula VI • Salvador</h3>
+            <p class="muted">Rua Anísio Melhor, 43<br>Salvador — BA • CEP 41181-100</p>
+            <a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=Rua%20An%C3%ADsio%20Melhor%2043%20Salvador%20BA%2041181100" target="_blank" rel="noopener">Abrir no mapa</a>
+          </div>
+          <div class="location-card">
+            <span class="eyebrow">Redes oficiais</span>
+            <h3 style="margin-top:14px">Acompanhe os resultados.</h3>
+            <p class="muted">Veja novos trabalhos e conteúdos da Jhana Braids nas redes sociais.</p>
+            <div style="display:flex;gap:10px;flex-wrap:wrap">
+              <a class="btn btn-secondary" href="https://www.instagram.com/jhanabraids" target="_blank" rel="noopener">Instagram</a>
+              <a class="btn btn-secondary" href="https://www.facebook.com/profile.php?id=61559329614066" target="_blank" rel="noopener">Facebook</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <div class="brand">
+          <img src="https://res.cloudinary.com/vx0fzksu/image/upload/v1787878564/file_00000000b468820e9e946a9fd0d74b66.png" alt="Logo Jhana Braids">
+          <span>Jhana Braids</span>
+        </div>
+        <p style="color:#d4c9d2;margin-top:14px;max-width:520px">Beleza que empodera. Tranças, estilos e cuidado com atendimento em Salvador.</p>
+      </div>
+      <div class="footer-links">
+        <strong style="color:#fff">Navegação</strong>
+        <a href="#estilos">Estilos</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#agendar">Agendar</a>
+      </div>
+      <div class="footer-links">
+        <strong style="color:#fff">Contato</strong>
+        <a href="https://wa.me/557181460486" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://www.instagram.com/jhanabraids" target="_blank" rel="noopener">@jhanabraids</a>
+        <span>Cabula VI • Salvador</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/557181460486?text=Ol%C3%A1%2C%20Jhana%20Braids!%20Vim%20pelo%20site%20e%20gostaria%20de%20consultar%20um%20hor%C3%A1rio." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">W</a>
+
+  <div class="mobile-bar">
+    <a href="#inicio"><strong>⌂</strong><span>Início</span></a>
+    <a href="#estilos"><strong>✦</strong><span>Estilos</span></a>
+    <a href="#agendar"><strong>＋</strong><span>Agendar</span></a>
+    <a href="https://wa.me/557181460486" target="_blank" rel="noopener"><strong>W</strong><span>WhatsApp</span></a>
+  </div>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button type="button" id="lightboxClose" aria-label="Fechar">×</button>
+    <img id="lightboxImg" alt="Resultado ampliado">
+  </div>
+
+  <div class="toast" id="toast">Serviço selecionado ✓</div>
+
+  <script>
+    const WHATSAPP = "557181460486";
+
+    const serviceSelect = document.getElementById("service");
+    const bookingSection = document.getElementById("agendar");
+    const toast = document.getElementById("toast");
+
+    function chooseService(service){
+      serviceSelect.value = service;
+      bookingSection.scrollIntoView({behavior:"smooth", block:"start"});
+      toast.textContent = service + " selecionado ✓";
+      toast.classList.add("show");
+      setTimeout(() => toast.classList.remove("show"), 1800);
+    }
+
+    document.querySelectorAll(".select-service, [data-service]").forEach(el=>{
+      el.addEventListener("click", e=>{
+        const service = el.dataset.service;
+        if(service){
+          e.preventDefault();
+          chooseService(service);
+        }
+      });
+    });
+
+    const locationSelect = document.getElementById("location");
+    const neighborhoodField = document.getElementById("neighborhoodField");
+    const neighborhoodInput = document.getElementById("neighborhood");
+
+    locationSelect.addEventListener("change", ()=>{
+      const home = locationSelect.value === "Atendimento a domicílio";
+      neighborhoodField.style.display = home ? "grid" : "none";
+      neighborhoodInput.required = home;
+      if(!home) neighborhoodInput.value = "";
+    });
+
+    const dateInput = document.getElementById("date");
+    const today = new Date();
+    today.setMinutes(today.getMinutes() - today.getTimezoneOffset());
+    dateInput.min = today.toISOString().split("T")[0];
+
+    document.getElementById("bookingForm").addEventListener("submit", e=>{
+      e.preventDefault();
+
+      const data = new FormData(e.currentTarget);
+      const name = data.get("name") || "";
+      const service = data.get("service") || "";
+      const length = data.get("length") || "Ainda não informado";
+      const location = data.get("location") || "";
+      const neighborhood = data.get("neighborhood") || "";
+      const date = data.get("date") || "";
+      const time = data.get("time") || "";
+      const note = data.get("note") || "Sem observações";
+
+      let formattedDate = date;
+      if(date){
+        const [y,m,d] = date.split("-");
+        formattedDate = `${d}/${m}/${y}`;
+      }
+
+      const message =
+`Olá, Jhana Braids! 💕 Vim pelo site e gostaria de solicitar um agendamento.
+
+✨ Serviço: ${service}
+📏 Comprimento: ${length}
+📍 Modalidade: ${location}${neighborhood ? `\n🏠 Bairro: ${neighborhood}` : ""}
+📅 Data desejada: ${formattedDate}
+🕐 Horário desejado: ${time}
+👤 Nome: ${name}
+📝 Observação: ${note}
+
+Gostaria de confirmar disponibilidade.`;
+
+      const url = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(message)}`;
+      window.open(url, "_blank", "noopener");
+    });
+
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightboxImg");
+    document.querySelectorAll(".portfolio figure img").forEach(img=>{
+      img.addEventListener("click", ()=>{
+        lightboxImg.src = img.src;
+        lightbox.classList.add("open");
+        lightbox.setAttribute("aria-hidden","false");
+      });
+    });
+    function closeLightbox(){
+      lightbox.classList.remove("open");
+      lightbox.setAttribute("aria-hidden","true");
+      lightboxImg.src = "";
+    }
+    document.getElementById("lightboxClose").addEventListener("click", closeLightbox);
+    lightbox.addEventListener("click", e=>{ if(e.target === lightbox) closeLightbox(); });
+    document.addEventListener("keydown", e=>{ if(e.key === "Escape") closeLightbox(); });
+  </script>
+</body>
+</html>
