@@ -4,13 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#1b141c" />
-  <meta name="description" content="Jhana Braids — especialista em tranças, French Curl Braids, Boho Braids e megahair em Salvador. Atendimento com hora marcada no Cabula VI e a domicílio." />
+  <meta name="description" content="Jhana Braids: especialista em tranças, French Curl Braids, Boho Braids e megahair em Salvador. Atendimento com hora marcada no Cabula VI e a domicílio." />
   <meta name="keywords" content="Jhana Braids, trancista Salvador, tranças Salvador, Cabula VI, French Curl Braids Salvador, Boho Braids Salvador, megahair Salvador" />
   <meta property="og:title" content="Jhana Braids | Tranças em Salvador" />
   <meta property="og:description" content="Beleza que empodera. Escolha seu estilo, veja resultados reais e solicite seu horário pelo site." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://res.cloudinary.com/vx0fzksu/image/upload/v1787878564/file_00000000b468820e9e946a9fd0d74b66.png" />
-  <title>Jhana Braids | Tranças & Megahair em Salvador</title>
+  <title>Jhana Braids | Tranças e Megahair em Salvador</title>
+  <link rel="icon" href="https://res.cloudinary.com/vx0fzksu/image/upload/v1787878564/file_00000000b468820e9e946a9fd0d74b66.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,8 +63,8 @@
       text-transform:uppercase;
     }
     h1,h2,h3{font-family:"Playfair Display",serif;line-height:1.08;margin:0 0 16px}
-    h1{font-size:clamp(2.7rem,7vw,5.8rem)}
-    h2{font-size:clamp(2rem,4vw,3.5rem)}
+    h1{font-size:clamp(2.2rem,6.2vw,5rem)}
+    h2{font-size:clamp(1.8rem,3.6vw,3.2rem)}
     h3{font-size:1.45rem}
     p{margin:0 0 18px}
     .muted{color:var(--muted)}
@@ -89,7 +90,7 @@
       top:0;
       z-index:50;
       backdrop-filter:blur(16px);
-      background:rgba(251,247,251,.84);
+      background:rgba(251,247,251,.9);
       border-bottom:1px solid rgba(234,221,230,.8);
     }
     .nav-inner{
@@ -115,13 +116,27 @@
     }
     .nav-links{display:flex;gap:24px;align-items:center;font-size:.94rem}
     .nav-links a:hover{color:var(--brand)}
+    .menu-toggle{
+      display:none;
+      width:44px;height:44px;
+      border:1px solid var(--line);
+      border-radius:12px;
+      background:#fff;
+      align-items:center;
+      justify-content:center;
+      flex-direction:column;
+      gap:5px;
+    }
+    .menu-toggle span{
+      width:18px;height:2px;background:var(--ink);display:block;
+    }
     .hero{
       min-height:calc(100vh - 74px);
       display:grid;
       align-items:center;
       position:relative;
       overflow:hidden;
-      padding:48px 0;
+      padding:48px 0 28px;
     }
     .hero:before{
       content:"";
@@ -158,7 +173,7 @@
       position:relative;
       border-radius:32px;
       overflow:hidden;
-      min-height:620px;
+      min-height:560px;
       box-shadow:var(--shadow);
       background:#000;
     }
@@ -192,7 +207,7 @@
       display:grid;
       grid-template-columns:repeat(4,1fr);
       gap:14px;
-      margin-top:-22px;
+      margin-top:22px;
       position:relative;
       z-index:4;
     }
@@ -234,8 +249,33 @@
       margin-bottom:32px;
     }
     .section-head p{max-width:620px}
+    .offer{
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:28px;
+      align-items:center;
+      background:#120d12;
+      color:#fff;
+      border-radius:28px;
+      overflow:hidden;
+      box-shadow:var(--shadow);
+    }
+    .offer-copy{padding:36px 32px}
+    .offer-copy .eyebrow{
+      background:rgba(255,255,255,.08);
+      border-color:#453544;
+      color:#f0b8d7;
+    }
+    .offer-copy h2{margin-top:14px}
+    .offer-copy p{color:#d4c9d2}
+    .offer-media img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      min-height:420px;
+    }
     .portfolio{
-      columns:3 280px;
+      columns:3 260px;
       column-gap:16px;
     }
     .portfolio figure{
@@ -270,10 +310,7 @@
       box-shadow:0 10px 30px rgba(27,20,28,.12);
     }
     .reel video{width:100%;height:100%;object-fit:cover}
-    .dark{
-      background:#1b141c;
-      color:#fff;
-    }
+    .dark{background:#1b141c;color:#fff}
     .dark .muted{color:#cbbfc9}
     .about-grid{
       display:grid;
@@ -289,11 +326,7 @@
     }
     .about-media img{width:100%;height:100%;object-fit:cover}
     .checklist{display:grid;gap:12px;margin:24px 0}
-    .check{
-      display:flex;
-      gap:12px;
-      align-items:flex-start;
-    }
+    .check{display:flex;gap:12px;align-items:flex-start}
     .check i{
       width:26px;height:26px;
       display:grid;place-items:center;
@@ -377,11 +410,7 @@
     summary:after{content:"+";color:var(--brand);font-size:1.35rem}
     details[open] summary:after{content:"–"}
     details p{padding:0 0 18px}
-    .location-grid{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:24px;
-    }
+    .location-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
     .location-card{
       background:#fff;
       border:1px solid var(--line);
@@ -456,31 +485,60 @@
     }
     .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 
+    @media(max-width:1100px){
+      .hero-grid{gap:32px}
+      .hero-media{min-height:500px}
+      .grid-4{grid-template-columns:repeat(2,1fr)}
+    }
+
     @media(max-width:980px){
-      .nav-links{display:none}
-      .hero-grid,.about-grid,.booking-wrap,.location-grid{grid-template-columns:1fr}
-      .hero-media{min-height:520px}
-      .grid-4,.video-grid{grid-template-columns:repeat(2,1fr)}
-      .stats{grid-template-columns:repeat(2,1fr);margin-top:20px}
+      .menu-toggle{display:flex}
+      .nav-links{
+        display:none;
+        position:absolute;
+        left:0;right:0;top:74px;
+        background:rgba(251,247,251,.98);
+        border-bottom:1px solid var(--line);
+        padding:12px 18px 18px;
+        flex-direction:column;
+        align-items:stretch;
+        gap:8px;
+      }
+      .nav-links.open{display:flex}
+      .nav-links a{
+        padding:12px 10px;
+        border-radius:12px;
+      }
+      .hero-grid,.about-grid,.booking-wrap,.location-grid,.offer{grid-template-columns:1fr}
+      .hero{min-height:auto}
+      .hero-media{min-height:480px}
+      .offer-media img{min-height:320px}
+      .video-grid{grid-template-columns:repeat(2,1fr)}
+      .stats{grid-template-columns:repeat(2,1fr)}
       .steps{grid-template-columns:1fr}
       .footer-grid{grid-template-columns:1fr}
     }
+
     @media(max-width:640px){
       .container{width:min(100% - 24px,var(--max))}
       .section{padding:66px 0}
       .nav-inner{height:66px}
-      .hero{padding:24px 0 38px}
-      .hero-grid{gap:28px}
-      .hero-media{min-height:490px;border-radius:24px}
+      .nav-links{top:66px}
+      .hero{padding:24px 0 20px}
+      .hero-grid{gap:22px}
+      .hero-media{min-height:420px;border-radius:24px}
+      .hero-caption{flex-direction:column;align-items:flex-start}
       .hero-actions{display:grid;grid-template-columns:1fr}
       .hero-actions .btn{width:100%}
-      .grid-4,.video-grid,.form-grid{grid-template-columns:1fr}
+      .grid-4,.form-grid{grid-template-columns:1fr}
       .video-grid{grid-template-columns:repeat(2,1fr)}
       .section-head{display:block}
       .section-head p{margin-top:10px}
       .stats{grid-template-columns:1fr 1fr}
       .stat{padding:16px}
+      .offer-copy{padding:24px 20px}
       .booking-card{padding:18px}
+      .about-media{min-height:360px}
       .wa-float{display:none}
       footer{padding-bottom:110px}
       .mobile-bar{
@@ -514,8 +572,12 @@
         <img src="https://res.cloudinary.com/vx0fzksu/image/upload/v1787878564/file_00000000b468820e9e946a9fd0d74b66.png" alt="Logo Jhana Braids">
         <span>Jhana Braids</span>
       </a>
-      <div class="nav-links">
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
         <a href="#estilos">Estilos</a>
+        <a href="#oferta">Oferta</a>
         <a href="#resultados">Resultados</a>
         <a href="#sobre">Sobre</a>
         <a href="#faq">Dúvidas</a>
@@ -530,7 +592,7 @@
         <div class="hero-grid">
           <div class="hero-copy">
             <span class="eyebrow">Beleza que empodera</span>
-            <h1>Tranças que transformam seu visual — e a forma como você se sente.</h1>
+            <h1>Tranças que transformam seu visual e a forma como você se sente.</h1>
             <p class="muted">Especialista em tranças, French Curl Braids, Boho Braids e megahair em Salvador. Atendimento com hora marcada no Cabula VI e opção a domicílio.</p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="#agendar">Agendar meu horário</a>
@@ -573,16 +635,16 @@
             <span class="eyebrow">Escolha seu próximo visual</span>
             <h2>Seu estilo começa aqui.</h2>
           </div>
-          <p class="muted">Veja algumas das opções presentes no portfólio da Jhana Braids. Ao escolher um estilo, o agendamento já será preparado para você.</p>
+          <p class="muted">Veja opções do portfólio da Jhana Braids. Ao escolher um estilo, o agendamento já será preparado para você.</p>
         </div>
 
         <div class="grid-4">
           <article class="card service-card">
             <div class="card-media">
-              <img loading="lazy" src="https://res.cloudinary.com/vx0fzksu/image/upload/v1787878562/French_curl_braids_gostaram_desse_resultado_frechcurlbraids_tran%C3%A7as_followforfollow_1.jpg" alt="French Curl Braids">
+              <img loading="lazy" src="midias/03-cacheado-ruivo.jpg" alt="French Curl Braids">
             </div>
             <div class="card-body">
-              <span class="card-tag">Movimento + acabamento</span>
+              <span class="card-tag">Movimento e acabamento</span>
               <h3>French Curl Braids</h3>
               <p class="muted">Tranças com cachos marcantes e acabamento delicado para um resultado leve e sofisticado.</p>
               <button class="btn btn-secondary btn-block select-service" data-service="French Curl Braids">Quero esse visual</button>
@@ -591,10 +653,10 @@
 
           <article class="card service-card">
             <div class="card-media">
-              <img loading="lazy" src="https://res.cloudinary.com/vx0fzksu/image/upload/v1787878569/Screenshot_20260827_205710_Instagram.jpg" alt="Boho Braids">
+              <img loading="lazy" src="midias/06-ondulado-oculos-verde.jpg" alt="Boho Braids">
             </div>
             <div class="card-body">
-              <span class="card-tag">Leveza + personalidade</span>
+              <span class="card-tag">Leveza e personalidade</span>
               <h3>Boho Braids</h3>
               <p class="muted">Uma opção versátil para quem busca tranças com textura, movimento e um visual contemporâneo.</p>
               <button class="btn btn-secondary btn-block select-service" data-service="Boho Braids">Quero esse visual</button>
@@ -603,10 +665,10 @@
 
           <article class="card service-card">
             <div class="card-media">
-              <img loading="lazy" src="https://res.cloudinary.com/vx0fzksu/image/upload/v1787878568/Screenshot_20260827_205655_Instagram.jpg" alt="Tranças Jhana Braids">
+              <img loading="lazy" src="midias/09-box-braids-longas.jpg" alt="Tranças Jhana Braids">
             </div>
             <div class="card-body">
-              <span class="card-tag">Detalhes + precisão</span>
+              <span class="card-tag">Detalhes e precisão</span>
               <h3>Tranças</h3>
               <p class="muted">Acabamento cuidadoso e estilos adaptados ao resultado que você deseja construir.</p>
               <button class="btn btn-secondary btn-block select-service" data-service="Tranças">Quero minhas tranças</button>
@@ -615,10 +677,10 @@
 
           <article class="card service-card">
             <div class="card-media">
-              <img loading="lazy" src="https://res.cloudinary.com/vx0fzksu/image/upload/v1787878571/Screenshot_20260827_212056_WhatsApp.jpg" alt="Megahair Jhana Braids">
+              <img loading="lazy" src="midias/02-liso-oculos-rosa.jpg" alt="Megahair Jhana Braids">
             </div>
             <div class="card-body">
-              <span class="card-tag">Comprimento + presença</span>
+              <span class="card-tag">Comprimento e presença</span>
               <h3>Megahair</h3>
               <p class="muted">Consulte opções, disponibilidade e condições atuais diretamente no agendamento.</p>
               <button class="btn btn-secondary btn-block select-service" data-service="Megahair">Consultar megahair</button>
@@ -628,24 +690,42 @@
       </div>
     </section>
 
-    <section class="section" id="resultados" style="padding-top:30px">
+    <section class="section" id="oferta" style="padding-top:10px">
+      <div class="container">
+        <div class="offer">
+          <div class="offer-copy">
+            <span class="eyebrow">Campanha atual</span>
+            <h2>Tranças e megahair com material incluso.</h2>
+            <p>Megahair a partir de R$ 280, com material por conta da Jhana Braids. Vagas limitadas, atendimento no Cabula VI.</p>
+            <a class="btn btn-brand" href="#agendar" data-service="Megahair">Quero essa condição</a>
+          </div>
+          <div class="offer-media">
+            <img src="midias/flyer-trancas-megahair.jpg" alt="Flyer Tranças e Megahair Jhana Braids">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="resultados" style="padding-top:50px">
       <div class="container">
         <div class="section-head">
           <div>
             <span class="eyebrow">Portfólio real</span>
             <h2>Detalhes que fazem diferença.</h2>
           </div>
-          <p class="muted">Toque em qualquer imagem para ampliar. Os materiais abaixo foram fornecidos pela própria marca.</p>
+          <p class="muted">Toque em qualquer imagem para ampliar. Fotos reais do estúdio da Jhana Braids.</p>
         </div>
 
         <div class="portfolio">
-          <figure><img loading="lazy" src="https://res.cloudinary.com/vx0fzksu/image/upload/v1787878569/Screenshot_20260827_205710_Instagram.jpg" alt="Resultado de tranças Jhana Braids"><figcaption>Acabamento</figcaption></figure>
-          <figure><img loading="lazy" src="https://res.cloudinary.com/vx0fzksu/image/upload/v1787878568/Screenshot_20260827_205841_Instagram.jpg" alt="Jhana Braids"><figcaption>Jhana Braids</figcaption></figure>
-          <figure><img loading="lazy" src="https://res.cloudinary.com/vx0fzksu/image/upload/v1787878568/Screenshot_20260827_205655_Instagram.jpg" alt="Detalhe de tranças"><figcaption>Detalhes</figcaption></figure>
-          <figure><img loading="lazy" src="https://res.cloudinary.com/vx0fzksu/image/upload/v1787878567/Screenshot_20260827_205541_Instagram.jpg" alt="Resultado de tranças"><figcaption>Comprimento</figcaption></figure>
-          <figure><img loading="lazy" src="https://res.cloudinary.com/vx0fzksu/image/upload/v1787878563/Screenshot_20260827_205445_Instagram.jpg" alt="Resultado frontal"><figcaption>Resultado frontal</figcaption></figure>
-          <figure><img loading="lazy" src="https://res.cloudinary.com/vx0fzksu/image/upload/v1787878563/Screenshot_20260827_205524_Instagram.jpg" alt="Resultado traseiro"><figcaption>Resultado traseiro</figcaption></figure>
-          <figure><img loading="lazy" src="https://res.cloudinary.com/vx0fzksu/image/upload/v1787878563/Screenshot_20260827_205507_Instagram.jpg" alt="Resultado Jhana Braids"><figcaption>Transformação</figcaption></figure>
+          <figure><img loading="lazy" src="midias/05-costas-cacheado-2.jpg" alt="French Curl vista das costas"><figcaption>French Curl</figcaption></figure>
+          <figure><img loading="lazy" src="midias/06-ondulado-oculos-verde.jpg" alt="Resultado ondulado Jhana Braids"><figcaption>Movimento</figcaption></figure>
+          <figure><img loading="lazy" src="midias/07-tranca-radial.jpg" alt="Detalhe de trança radial"><figcaption>Partição</figcaption></figure>
+          <figure><img loading="lazy" src="midias/03-cacheado-ruivo.jpg" alt="French Curl ruivo"><figcaption>French Curl</figcaption></figure>
+          <figure><img loading="lazy" src="midias/01-tranca-rabo-laco.jpg" alt="Trança com rabo e laço"><figcaption>Acabamento</figcaption></figure>
+          <figure><img loading="lazy" src="midias/09-box-braids-longas.jpg" alt="Box braids longas"><figcaption>Comprimento</figcaption></figure>
+          <figure><img loading="lazy" src="midias/08-cacheado-vermelho.jpg" alt="Cachos volumosos"><figcaption>Volume</figcaption></figure>
+          <figure><img loading="lazy" src="midias/04-costas-cacheado-1.jpg" alt="Resultado cacheado das costas"><figcaption>Textura</figcaption></figure>
+          <figure><img loading="lazy" src="midias/02-liso-oculos-rosa.jpg" alt="Megahair liso"><figcaption>Megahair</figcaption></figure>
           <figure><img loading="lazy" src="https://res.cloudinary.com/vx0fzksu/image/upload/v1787878562/French_curl_braids_gostaram_desse_resultado_frechcurlbraids_tran%C3%A7as_followforfollow.jpg" alt="French Curl Braids"><figcaption>French Curl</figcaption></figure>
           <figure><img loading="lazy" src="https://res.cloudinary.com/vx0fzksu/image/upload/v1787878562/French_curl_braids_gostaram_desse_resultado_frechcurlbraids_tran%C3%A7as_followforfollow_2.jpg" alt="French Curl Braids resultado"><figcaption>French Curl</figcaption></figure>
         </div>
@@ -659,7 +739,7 @@
             <span class="eyebrow" style="background:#2b202a;border-color:#453544;color:#f0b8d7">Resultados em movimento</span>
             <h2>Veja de perto.</h2>
           </div>
-          <p class="muted">Vídeos reais do trabalho da Jhana Braids para você perceber textura, movimento e acabamento.</p>
+          <p class="muted">Vídeos reais do trabalho da Jhana Braids para perceber textura, movimento e acabamento.</p>
         </div>
 
         <div class="video-grid">
@@ -691,7 +771,7 @@
       <div class="container">
         <div class="about-grid">
           <div class="about-media">
-            <img loading="lazy" src="https://res.cloudinary.com/vx0fzksu/image/upload/v1787878569/Screenshot_20260827_205906_Instagram.jpg" alt="Profissional Jhana Braids">
+            <img loading="lazy" src="midias/08-cacheado-vermelho.jpg" alt="Resultado Jhana Braids">
           </div>
           <div>
             <span class="eyebrow">Por trás da Jhana Braids</span>
@@ -734,7 +814,7 @@
             <p class="muted">Preencha o essencial. Ao finalizar, sua solicitação será enviada pelo WhatsApp já organizada para facilitar a confirmação.</p>
             <div class="location-card">
               <strong>Jhana Braids</strong>
-              <p class="muted" style="margin-top:8px">Cabula VI • Salvador — BA<br>Rua Anísio Melhor, 43<br>CEP 41181-100</p>
+              <p class="muted" style="margin-top:8px">Cabula VI • Salvador, BA<br>Rua Anísio Melhor, 43<br>CEP 41181-100</p>
               <p class="muted">Atendimento somente com hora marcada.</p>
             </div>
           </div>
@@ -772,7 +852,7 @@
                 <label for="location">Modalidade</label>
                 <select id="location" name="location" required>
                   <option value="">Selecione</option>
-                  <option>Atendimento no espaço — Cabula VI</option>
+                  <option>Atendimento no espaço, Cabula VI</option>
                   <option>Atendimento a domicílio</option>
                 </select>
               </div>
@@ -823,19 +903,19 @@
           </details>
           <details>
             <summary>Vocês atendem a domicílio?</summary>
-            <p class="muted">Sim. A marca informa atendimento a domicílio. A disponibilidade para cada região deve ser confirmada pelo WhatsApp.</p>
+            <p class="muted">Sim. A disponibilidade para cada região deve ser confirmada pelo WhatsApp.</p>
           </details>
           <details>
             <summary>Onde fica a Jhana Braids?</summary>
-            <p class="muted">Cabula VI, Salvador — BA. O endereço informado pela empresa é Rua Anísio Melhor, 43, CEP 41181-100.</p>
+            <p class="muted">Cabula VI, Salvador, BA. Rua Anísio Melhor, 43, CEP 41181-100.</p>
           </details>
           <details>
             <summary>O material está incluso?</summary>
-            <p class="muted">Isso pode variar conforme o serviço e a condição vigente. Confirme o material necessário e as condições no momento do agendamento.</p>
+            <p class="muted">Na campanha atual de megahair, o material pode estar incluso. Confirme a condição vigente no momento do agendamento.</p>
           </details>
           <details>
             <summary>Posso enviar uma foto de referência?</summary>
-            <p class="muted">Sim. Você pode indicar no formulário que possui uma referência e enviá-la pelo WhatsApp durante a confirmação.</p>
+            <p class="muted">Sim. Indique no formulário e envie a foto pelo WhatsApp na confirmação.</p>
           </details>
         </div>
       </div>
@@ -847,7 +927,7 @@
           <div class="location-card">
             <span class="eyebrow">Localização</span>
             <h3 style="margin-top:14px">Cabula VI • Salvador</h3>
-            <p class="muted">Rua Anísio Melhor, 43<br>Salvador — BA • CEP 41181-100</p>
+            <p class="muted">Rua Anísio Melhor, 43<br>Salvador, BA • CEP 41181-100</p>
             <a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=Rua%20An%C3%ADsio%20Melhor%2043%20Salvador%20BA%2041181100" target="_blank" rel="noopener">Abrir no mapa</a>
           </div>
           <div class="location-card">
@@ -903,19 +983,27 @@
     <img id="lightboxImg" alt="Resultado ampliado">
   </div>
 
-  <div class="toast" id="toast">Serviço selecionado ✓</div>
+  <div class="toast" id="toast">Serviço selecionado</div>
 
   <script>
     const WHATSAPP = "557181460486";
-
     const serviceSelect = document.getElementById("service");
     const bookingSection = document.getElementById("agendar");
     const toast = document.getElementById("toast");
+    const navLinks = document.getElementById("navLinks");
+    const menuToggle = document.getElementById("menuToggle");
+
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+    });
+    navLinks.querySelectorAll("a").forEach(a => {
+      a.addEventListener("click", () => navLinks.classList.remove("open"));
+    });
 
     function chooseService(service){
       serviceSelect.value = service;
       bookingSection.scrollIntoView({behavior:"smooth", block:"start"});
-      toast.textContent = service + " selecionado ✓";
+      toast.textContent = service + " selecionado";
       toast.classList.add("show");
       setTimeout(() => toast.classList.remove("show"), 1800);
     }
@@ -966,15 +1054,15 @@
       }
 
       const message =
-`Olá, Jhana Braids! 💕 Vim pelo site e gostaria de solicitar um agendamento.
+`Olá, Jhana Braids! Vim pelo site e gostaria de solicitar um agendamento.
 
-✨ Serviço: ${service}
-📏 Comprimento: ${length}
-📍 Modalidade: ${location}${neighborhood ? `\n🏠 Bairro: ${neighborhood}` : ""}
-📅 Data desejada: ${formattedDate}
-🕐 Horário desejado: ${time}
-👤 Nome: ${name}
-📝 Observação: ${note}
+Serviço: ${service}
+Comprimento: ${length}
+Modalidade: ${location}${neighborhood ? `\nBairro: ${neighborhood}` : ""}
+Data desejada: ${formattedDate}
+Horário desejado: ${time}
+Nome: ${name}
+Observação: ${note}
 
 Gostaria de confirmar disponibilidade.`;
 
